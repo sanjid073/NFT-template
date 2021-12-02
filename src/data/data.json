@@ -1,0 +1,99 @@
+{
+  "OurGame": [
+    {"text1": "Happy Astronauts is an ultra realistic open world mtaverse game like no other. We are currently developing it on the Unreal Engin 5 with the targetd full release in Q4 2022."},
+    {"text2": "The game consists of several game modes such as Adventure, Creative, Battle Royal and more. You will be able to unlock your OG Astronaut as a playable character in game and they will also unlock additional bonus items in game."},
+    {"text3": "Within the game all purchases including caracter skins, weapon/vehicle skins, land, loot crates, sason passes, etc. are all NFTs. Eveerything you collect, earn, or purchase can be traded or sold to other players in game or via 3rd party marketplaces."},
+    {"text4": "Utilizing our proprietary technology, NFTs, Crypto, and Blockchain fully integrate into the games metaverse and allows for an all new gaming experience."}
+  ],
+  "MintStage": [
+    {
+      "mintingstageimg": "/imgs/Mint-supply-img.png",
+      "stagenumber": "STAGE 1",
+      "mintsupply": "0-200",
+      "price": "0.05 ETH",
+      "mintingstagetext1":"Founders shoulder patch",
+      "mintingstagetext2":"Founders Metaverse NFT Badge",
+      "mintingstagetext3":"$ASTRO Coin Airdrop+",
+      "mintingstagetext4":"HA Insider Group Access",
+      "mintingstagetext5":"Closed Beta Access",
+      "mintingstagetext6":"Auto Whitelist/VIP Access",
+      "mintingstagebtn":"/imgs/Mint Now Button-black.png"
+    },
+    {
+      "mintingstageimg": "/imgs/Mint-supply-(Get-whitelisted-2).png",
+      "stagenumber": "STAGE 2",
+      "mintsupply": "201-3,000",
+      "price": "0.07 ETH",
+      "mintingstagetext1":"Discover Metaverse NFT Badge",
+      "mintingstagetext2":"$ASTRO Coin Airdrop",
+      "mintingstagetext3":"Closed Beta Access",
+      "mintingstagetext4":"Auto Whitelist/VIP Access",
+      "mintingstagebtn":"/imgs/join discord.png",
+      "getwhitelisted":"GET WHITELISTED"
+    },
+    {
+      "mintingstageimg": "/imgs/Mint-supply(Get wgitelisted).png",
+      "stagenumber": "STAGE 3",
+      "mintsupply": "3,001-10,000",
+      "price": "0.09 ETH",
+      "mintingstagetext1":"Explorer Metaverse NFT Badge",
+      "mintingstagetext2":"Closed Beta Access",
+      "mintingstagetext3":"Auto Whitelist/VIP Access",
+      "mintingstagebtn":"/imgs/join discord.png",
+      "getwhitelisted":"GET WITELISTED"
+    }
+  ],
+  "OurLoadMap": [
+    {
+      "title": "OG Astronaut NFTs",
+      "text1": "Lorem Ipsum Lorem ",
+      "text2": "Lorem Ipsum Lorem ",
+      "text5": "Lorem Ipsum Lorem "
+    },
+    {
+      "title": "Metaverse Game Dev",
+      "text1": "Lorem Ipsum Lorem ",
+      "text2": "Lorem Ipsum Lorem ",
+      "text5": "Lorem Ipsum Lorem"
+    },  
+    {
+      "title": "Founders Badge NFTs",
+      "text1": "Lorem Ipsum Lorem Ipsum",
+      "text2": "Lorem Ipsum Lorem Ipsum ",
+      "text5": "Lorem Ipsum Lorem Ipsum"
+    },
+    {
+      "title": "Blockchain Dev",
+      "text1": "Lorem Ipsum ",
+      "text2": "Lorem Ipsum ",
+      "text5": "Lorem Ipsum "
+    }
+  ],
+  "NFTProjects": [
+    {
+      "text1": "BACKGROUNDS",
+      "text2": "SPACE SUITS",
+      "text3": "HELMETS",
+      "text4": "CHEST GLOWS",
+      "text5": "CHEST WRAPS",
+      "text6": "STRAPS",
+      "text7": "STITCING",
+      "text8": "AL FACES",
+      "text9": "POWER TUBES",
+      "text10": "BUCKLES",
+      "text11": "SHOULDER PACTCHS",
+      "text12": "SOULDER LOGOS",
+      "text13": "OVERLAY GLOWS",
+      "verifyAddress": "VERIFIED SMART CONTRACT ADDRESS:",
+      "verifyAddresstext": "0xEE37e56f3a47D7C752C924064F96077338fD5D"
+    }
+  ],
+  "NFTPartner": [
+    {"text1": "Happy Astronauts is an ultra realistic open world mtaverse game like no other. We are currently developing it on the Unreal Engin 5 with the targetd full release in Q4 2022."},
+    {"text2": "The game consists of several game modes such as Adventure, Creative, Battle Royal and more. You will be able to unlock your OG Astronaut as a playable character in game and they will also unlock additional bonus items in game."},
+    {"text3": "Within the game all purchases including caracter skins, weapon/vehicle skins, land, loot crates, sason passes, etc. are all NFTs. Eveerything you collect, earn, or purchase can be traded or sold to other players in game or via 3rd party marketplaces."},
+    {"text4": "Utilizing our proprietary technology, NFTs, Crypto, and Blockchain fully integrate into the games metaverse and allows for an all new gaming experience."}
+  ]
+}
+
+

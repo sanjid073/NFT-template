@@ -1,0 +1,2071 @@
+body,
+html {
+  font-family: "Open Sans", sans-serif;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  color: #777;
+  font-weight: 400;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.background {
+  background: url(../imgs/Background.png);
+  background-size: 100% 100%;
+  background-position: center;
+  z-index: -1;
+  margin-top: -1px;
+  backdrop-filter: url();
+}
+
+h2,
+h3,
+h4 {
+  font-family: "Raleway", sans-serif;
+}
+h2 {
+  text-transform: uppercase;
+  margin: 0 0 20px;
+  font-weight: 800;
+  font-size: 36px;
+  color: #333;
+}
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+h4 {
+  font-size: 18px;
+  color: #333;
+  font-weight: 600;
+}
+h5 {
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 20px;
+}
+p {
+  font-size: 15px;
+}
+p.intro {
+  margin: 12px 0 0;
+  line-height: 24px;
+}
+
+.page-scroll a {
+  color: white;
+  margin-top: 27px;
+  font-size: 20px;
+}
+
+/* a {
+  color: #608dfd;
+  font-weight: 400;
+} */
+a:hover,
+/* a:focus {
+  text-decoration: none;
+  color: #608dfd;
+} */
+ul,
+ol {
+  list-style: none;
+}
+ul,
+ol {
+  padding: 0;
+  webkit-padding: 0;
+  moz-padding: 0;
+}
+hr {
+  height: 2px;
+  width: 70px;
+  text-align: center;
+  position: relative;
+  background: #1e7a46;
+  margin-bottom: 20px;
+  border: 0;
+}
+/* Navigation */
+#menu {
+  padding: 15px;
+  transition: all 0.8s;
+}
+#menu.navbar-default {
+  /* background-color: #fff; */
+  border-color: rgba(231, 231, 231, 0);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+#menu a.navbar-brand {
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  text-transform: uppercase;
+}
+#menu.navbar-default .navbar-nav > li {
+  list-style-type: none;
+}
+#menu.navbar-default .navbar-nav > li > a {
+  font-family: Lato, sans-serif;
+  text-transform: uppercase;
+  color: rgb(85, 85, 85);
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 8px 2px;
+  border-radius: 0px;
+  line-height: 92px;
+  margin: 9px 20px 0px;
+}
+.mint-now-button {
+  width: 250px;
+  position: absolute !important;
+  top: 126% !important;
+  margin-top: 30px !important;
+  margin-left: 83px !important;
+}
+.mint-now-button img {
+  width: 100%;
+  background-color: #00000017;
+  border-radius: 13px;
+}
+#menu.navbar-default .navbar-nav > li > a:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 0;
+  height: 2px;
+  /* background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%); */
+  content: "";
+  transition: width 0.2s;
+}
+#menu.navbar-default .navbar-nav > li > a:hover:after {
+  width: 100%;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  background-color: transparent;
+}
+.navbar-default .navbar-nav > .active > a:after,
+.navbar-default .navbar-nav > .active > a:hover:after,
+.navbar-default .navbar-nav > .active > a:focus:after {
+  display: block !important;
+  position: absolute !important;
+  left: 0 !important;
+  bottom: -1px !important;
+  width: 100% !important;
+  height: 2px !important;
+  /* background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%) !important; */
+  content: "" !important;
+  transition: width 0.2s !important;
+}
+.navbar-toggle {
+  border-radius: 0;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #fff;
+  border-color: #608dfd;
+}
+.navbar-default .navbar-toggle:hover > .icon-bar {
+  background-color: #608dfd;
+}
+.section-title {
+  margin-bottom: 70px;
+}
+.section-title h2 {
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+.section-title h2::after {
+  position: absolute;
+  content: "";
+  height: 4px;
+  width: 60px;
+  bottom: 0;
+  margin-left: -30px;
+  left: 50%;
+}
+.section-title p {
+  font-size: 18px;
+}
+.btn-custom {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #5ca9fb;
+  background-image: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  padding: 14px 34px;
+  letter-spacing: 1px;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 25px;
+  transition: all 0.5s linear;
+  border: 0;
+}
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom.focus,
+.btn-custom:active,
+.btn-custom.active {
+  color: #fff;
+  background-image: none;
+  background-color: #6372ff;
+}
+.btn:active,
+.btn.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+a:focus,
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: none;
+  outline-offset: none;
+}
+/* Header Section */
+.intro {
+  /* display: table; */
+  width: 100%;
+  padding: 100px;
+  background: url(../imgs/Header-bg-1.png) center center no-repeat;
+  background-color: #e5e5e5;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.overlay {
+  background: rgba(0, 0, 0, 0.2);
+}
+.intro-text button {
+  position: absolute;
+  bottom: 18%;
+  left: 12%;
+}
+#header {
+  position: relative;
+}
+.header-button {
+  width: 100%;
+  box-shadow: 8px 9px 20px 0px black;
+}
+.header-title {
+  padding: 50px 0;
+}
+.header-title img {
+  position: absolute;
+  top: 16%;
+}
+/* .header-icon {
+  padding: 100px 0;
+} */
+.header-icon a {
+  z-index: 2;
+  position: absolute;
+  top: 16%;
+  right: 14%;
+  background: transparent;
+  border: 2px solid transparent;
+}
+.header-icon a:nth-child(2) {
+  position: absolute;
+  top: 23%;
+  right: 14%;
+}
+.header-icon a:nth-child(3) {
+  position: absolute;
+  top: 30%;
+  right: 14%;
+}
+.header-icon a:nth-child(4) {
+  position: absolute;
+  top: 37%;
+  right: 14%;
+}
+.header-icon a:nth-child(5) {
+  position: absolute;
+  top: 44%;
+  right: 14%;
+}
+.header-icon a:nth-child(6) {
+  position: absolute;
+  top: 51%;
+  right: 14%;
+}
+.header-nav {
+  color: white !important;
+  margin-top: 25px !important;
+  font-size: 17 !important;
+  margin-right: 0 !important;
+  /* -webkit-text-stroke-width: 1px; */
+  -webkit-text-stroke-color: #00000073;
+  color: white;
+  text-shadow: -1px 1px 3px #000000;
+}
+
+.header-man img {
+  position: absolute;
+  bottom: 0%;
+  right: 5%;
+  width: 55%;
+}
+.header-title img:nth-child(2) {
+  position: absolute;
+  top: 38%;
+  margin-left: 30px;
+  margin-top: -24px;
+}
+.intro h1 {
+  color: #fff;
+  font-size: 85px;
+  text-shadow: 3px 3px 16px #000000;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  /* width: 57%; */
+  font-weight: 900;
+  line-height: 74px;
+  display: inline-block;
+  transform: rotate(354deg) !important;
+}
+.intro h3 {
+  font-family: "Segoe UI", sans-serif;
+  color: #00fdd7;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #093783;
+  font-size: 46px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 10px;
+  width: 55%;
+  font-weight: 900;
+  margin-left: 58px;
+  display: inline-block;
+  transform: rotate(354deg) !important;
+  letter-spacing: -3px;
+}
+.intro h1 span {
+  font-weight: 800;
+  color: #5ca9fb;
+}
+.intro p {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 30px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+header .intro-text {
+  padding-top: 350px;
+  /* padding-bottom: 200px; */
+  padding-bottom: -26px !important;
+  text-align: center;
+}
+/* Features Section */
+#features {
+  background: #f6f6f6;
+}
+#features i.fa {
+  font-size: 38px;
+  margin-bottom: 20px;
+  transition: all 0.5s;
+  color: #fff;
+  width: 100px;
+  height: 100px;
+  padding: 30px 0;
+  border-radius: 50%;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+}
+/* About Section */
+#about {
+  padding: 100px 0;
+  padding-bottom: 10%;
+}
+#about h3 {
+  font-size: 22px;
+  margin: 0 0 20px;
+}
+#about h2 {
+  position: relative;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+#about h2::after {
+  position: absolute;
+  content: "";
+  height: 4px;
+  width: 60px;
+  bottom: 0;
+  left: 0;
+}
+#about .about-text li {
+  margin-bottom: 6px;
+  margin-left: 6px;
+  list-style: none;
+  padding: 0;
+}
+#about .about-text li:before {
+  content: "\f00c";
+  font-family: "FontAwesome";
+  color: #5ca9fb;
+  font-size: 11px;
+  font-weight: 300;
+  padding-right: 8px;
+}
+#mintStage {
+  padding: 100px 0;
+  color: #fff;
+}
+#services .service-desc {
+  margin: 10px 10px 20px;
+}
+#services h2 {
+  color: #fff;
+}
+#services .section-title h2::after {
+  position: absolute;
+  content: "";
+  background: rgba(255, 255, 255, 0.3);
+  height: 4px;
+  width: 60px;
+  bottom: 0;
+  margin-left: -30px;
+  left: 50%;
+}
+#services i.fa {
+  font-size: 42px;
+  width: 120px;
+  height: 120px;
+  padding: 40px 0;
+  border-radius: 50%;
+  color: #fff;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+}
+#services h3 {
+  font-weight: 500;
+  padding: 5px 0;
+  color: #fff;
+}
+#services p {
+  color: rgba(255, 255, 255, 0.75);
+}
+#services .service-desc {
+  margin-bottom: 40px;
+}
+/* Portfolio Section */
+#portfolio {
+  padding: 100px 0;
+}
+.portfolio-item {
+  margin: 1px -15px 0 -14px;
+  padding: 0;
+}
+.portfolio-item .hover-bg {
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+}
+.hover-bg .hover-text {
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  color: #fff;
+  padding: 30% 0 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.hover-bg .hover-text > h4 {
+  opacity: 0;
+  color: #fff;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  transition: all 0.3s;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.hover-bg:hover .hover-text > h4 {
+  opacity: 1;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+.hover-bg:hover .hover-text {
+  opacity: 1;
+}
+/* Testimonials Section */
+#testimonials {
+  padding: 100px 0;
+  background: #f6f6f6;
+}
+#testimonials i {
+  color: #e6e6e6;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.testimonial {
+  position: relative;
+  padding: 20px;
+}
+.testimonial-image {
+  float: left;
+  margin-right: 15px;
+}
+.testimonial-image,
+.testimonial-image img {
+  display: block;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+.testimonial-content {
+  position: relative;
+  overflow: hidden;
+}
+.testimonial-content p {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-style: italic;
+}
+.testimonial-meta {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #666;
+}
+/* Team Section */
+#team {
+  padding: 100px 0;
+}
+#team h4 {
+  margin: 5px 0;
+}
+#team .team-img {
+  width: 240px;
+}
+#team .thumbnail {
+  background: transparent;
+  border: 0;
+}
+#team .thumbnail .caption {
+  padding: 10px 0 0;
+  color: #888;
+}
+/* Contact Section */
+#contact {
+  padding: 100px 0 60px;
+  color: rgba(255, 255, 255, 0.75);
+}
+#contact .section-title {
+  margin-bottom: 40px;
+}
+#contact .section-title p {
+  font-size: 16px;
+}
+#contact h2 {
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+#contact .section-title h2::after {
+  position: absolute;
+  content: "";
+  background: rgba(255, 255, 255, 0.3);
+  height: 4px;
+  width: 60px;
+  bottom: 0;
+  left: 30px;
+}
+#contact h3 {
+  color: #fff;
+  margin-top: 80px;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  font-weight: 400;
+}
+#contact form {
+  padding-top: 20px;
+}
+#contact .text-danger {
+  color: #cc0033;
+  text-align: left;
+}
+#contact .btn-custom {
+  margin: 30px 0;
+  background: transparent;
+  border: 2px solid #fff;
+}
+#contact .btn-custom:hover {
+  color: #1f386e;
+  background: #fff;
+}
+label {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  float: left;
+}
+#contact .form-control {
+  display: block;
+  width: 100%;
+  padding: 6px 12px;
+  font-size: 16px;
+  line-height: 1.42857143;
+  color: #444;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ddd;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+#contact .form-control:focus {
+  border-color: #999;
+  outline: 0;
+  -webkit-box-shadow: transparent;
+  box-shadow: transparent;
+}
+.form-control::-webkit-input-placeholder {
+  color: #777;
+}
+.form-control:-moz-placeholder {
+  color: #777;
+}
+.form-control::-moz-placeholder {
+  color: #777;
+}
+.form-control:-ms-input-placeholder {
+  color: #777;
+}
+#contact .contact-item {
+  margin: 20px 0;
+}
+#contact .contact-item span {
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 10px;
+  display: block;
+}
+#contact .contact-item i.fa {
+  margin-right: 10px;
+}
+#contact .social {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 50px;
+  margin-top: 50px;
+  text-align: center;
+}
+#contact .social ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+#contact .social i.fa {
+  font-size: 22px;
+  width: 48px;
+  height: 48px;
+  padding: 12px 0;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+#contact .social i.fa:hover {
+  color: #608dfd;
+  background: #fff;
+}
+/* Footer Section*/
+#footer {
+  background: #f6f6f6;
+  padding: 30px 0;
+}
+#footer > p {
+  color: #888;
+  font-size: 14px;
+}
+#footer a {
+  color: #608dfd;
+}
+#footer a:hover {
+  border-bottom: 2px solid #608dfd;
+}
+
+@media (max-width: 768px) {
+  /* #about img {
+    margin: 50px 0;
+  } */
+}
+
+.intro-text button {
+  background-color: transparent;
+  /* width: 25%; */
+  border: none;
+  outline: none;
+  border-radius: 186px;
+  /* position: absolute; */
+  /* bottom: 50px; */
+  /* left: 0px; */
+  /* padding: 5px 8px; */
+  left: 22%;
+}
+
+.mintingStage-bg {
+  background: url(../imgs/stages_bkg.png) no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  /* z-index: -1; */
+  position: relative;
+  margin-top: -5%;
+  padding-right: 4.5%;
+}
+
+.mintingstage-title {
+  text-align: center;
+  padding-bottom: 40px;
+}
+.mintingstage-title img {
+  width: 50%;
+}
+
+.mintingstagetext {
+  list-style: none;
+  text-align: left;
+  /* margin-top: 30px; */
+  margin-bottom: 16px;
+}
+.mintingstagetext li {
+  font-size: 16px;
+  font-weight: 500;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #00000033;
+  text-shadow: -1px 10px 4px #000000;
+}
+.mintingstagetext-item ul li::before {
+  content: "\2022";
+  color: 00fdd7;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+.mintingstagetext-item {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.mintingstagebtn button {
+  /* width: 160px; */
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  padding-bottom: 100px;
+}
+.mintingstagebtn img {
+  width: 100%;
+}
+.getwhitelisted {
+  /* margin-top: -20px; */
+  font-size: 16px;
+  position: absolute;
+  left: 35%;
+  color: #0dcea4;
+  font-weight: 600;
+  /* margin-top: 18px; */
+}
+.getwhitelisted:nth-child(1) {
+  visibility: hidden !important;
+}
+
+.ourGame-bg {
+  background: url(../imgs/ourGame-bg.png) no-repeat;
+  background-size: 100% 110%;
+  background-position: center;
+  z-index: -1;
+  position: relative;
+  margin-top: -5%;
+  padding-right: 4.5%;
+}
+
+.game-section {
+  padding-bottom: 7%;
+}
+.ourgame-title img {
+  width: 60%;
+  margin-bottom: 7px;
+}
+.ourgame-text {
+  font-size: 15px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #00000033;
+  color: white;
+  /* box-shadow: 0px 3px 17px 0px black; */
+  text-shadow: -1px 10px 4px #000000;
+  font-weight: 500;
+}
+.ourGame-header {
+  position: relative;
+}
+.engin-logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.ourGame-footer {
+  padding: 202px 0;
+  text-align: center;
+  margin-top: -6%;
+  margin-left: 10%;
+}
+
+.play-bg {
+  overflow: hidden;
+  position: relative;
+  /* width: 420px; */
+  width: 100%;
+  height: 320px;
+  background-color: #111325;
+}
+.play-item {
+  position: absolute;
+  left: 37%;
+  top: 28%;
+  width: 28%;
+}
+.play-title {
+  text-align: center;
+}
+.play-title img {
+  width: 80%;
+}
+.ourgame-icon {
+  display: flex;
+  justify-content: center;
+}
+.ourgame-icon img {
+  width: 100%;
+  height: 80%;
+}
+#loadmap {
+  background: url(../imgs/LoadMapBackground.png) no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  z-index: -1;
+  margin-top: -1px;
+  position: relative;
+}
+.loadmap-title {
+  text-align: center;
+  padding-top: 30px;
+}
+.loadmap-title img {
+  width: 32%;
+  position: absolute;
+  top: -15%;
+  left: 35%;
+}
+.loadmap img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+.loadmap-left-bot {
+  position: absolute;
+  top: 260px;
+  left: 0;
+  width: 25%;
+}
+.loadmap-left-bot img {
+  width: 100%;
+  margin-top: -145px;
+}
+.loadmap-right-top {
+  position: absolute;
+  top: -25%;
+  right: 0;
+  width: 30%;
+}
+.loadmap-right-top img {
+  width: 100%;
+}
+.loadmap-right-bottom {
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  width: 30%;
+}
+.loadmap-right-bottom img {
+  width: 100%;
+}
+.loadmap-center {
+  position: relative;
+  width: 35%;
+  /* margin: -100px auto; */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -100px;
+}
+.loadmap-center img {
+  width: 100%;
+  /* height: 165%; */
+}
+#nftProjects {
+  position: relative;
+  margin-top: -1px;
+}
+.nftProjects-title {
+  text-align: center;
+  padding: 92px;
+}
+.nftProjects-title img {
+  width: 35%;
+}
+.nftProjects-background img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+.nftProjects-text {
+  color: black;
+  margin-top: 37px;
+  margin-bottom: 2px;
+  font-size: 22px;
+  margin-right: 93px;
+  width: 100%;
+  font-weight: 700;
+}
+.nftProjects-text > h3 {
+  font-weight: 800;
+  color: black;
+}
+.nftPartner {
+  text-align: center;
+  padding: 50px 0;
+}
+.nftTitle img {
+  width: 50%;
+}
+.nftPartner img {
+  width: 50%;
+}
+.nftPartner-logo img {
+  width: 15%;
+  margin: 10px;
+}
+.play-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nftProjects-footer {
+  text-align: center;
+  margin-top: 8%;
+}
+.nftProjects-footer > .address {
+  font-weight: 570;
+  color: #47d4ad;
+  text-shadow: 0px 6px 4px #000000;
+  font-size: 27px;
+}
+.nftProjects-footer > .addressText {
+  color: white;
+  font-size: 25px;
+  text-shadow: 0px 6px 4px #000000;
+}
+.nftTitle {
+  padding-top: 5%;
+}
+#smartCoin {
+  opacity: 0.98;
+  position: relative;
+  margin-top: -1px;
+  padding-bottom: 5%;
+}
+.smartCoin-background img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  text-align: left;
+}
+.smartCoin-title img {
+  width: 50%;
+  text-align: center;
+}
+.smartCoin-title {
+  color: #47d4ad;
+  font-size: 22px;
+  text-align: center;
+  padding-top: 8%;
+}
+.smartCoin-text {
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  font-size: 22px;
+  /* color: #47d4ad; */
+  margin-bottom: -80px;
+  color: #fff;
+}
+.smartCoin-logo img {
+  width: 80%;
+  text-align: center;
+  margin: 50px auto;
+  /* padding-bottom: 6%; */
+  display: block;
+}
+.smartCoin-button {
+  display: inline-block;
+}
+.smartCoin-middle-button {
+  position: relative;
+  top: 35px;
+}
+.smartCoin-button button {
+  padding: 15px;
+  margin: 10px;
+  box-shadow: 4px 8px 20px 9px black;
+  border-radius: 10px;
+  margin-top: -50%;
+  background-image: linear-gradient(#80e6f0, #7545eb);
+}
+.m-btn {
+  position: relative;
+}
+#UpComingEvent {
+  /* padding: 40px; */
+  /* margin-top: 10%; */
+  /* background-color: rgb(3, 0, 7); */
+  opacity: 0.98;
+  position: relative;
+  margin-top: -1px;
+}
+.UpComingEvent-background img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  text-align: left;
+}
+.UpComingEvent-title img {
+  width: 50%;
+  text-align: center;
+}
+.UpComingEvent-title {
+  text-align: center;
+  padding-top: 8%;
+  margin-bottom: 60px;
+}
+.upComingEvent-logo {
+  text-align: center;
+}
+.upComingEvent-sub-logo {
+  text-align: center;
+  margin-top: -108px;
+}
+.upComingEvent-logo img {
+  width: 100%;
+  text-align: center;
+}
+
+.upComingEvent-text {
+  color: #fff;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #340867bd;
+  padding: 10px;
+  box-shadow: 1px 1px 20px 2px black;
+  border-radius: 10px;
+}
+.upComingEvent-text p {
+  font-size: 27px;
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+.upComingEvent-button {
+  text-align: center;
+  margin-top: -15px;
+}
+.upComingEvent-button button {
+  /* padding: 10px; */
+  /* color: #fff; */
+  padding: 0;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid transparent;
+}
+#footer {
+  background-color: #0d0f1c;
+  position: relative;
+  margin-top: 15%;
+}
+.footer-background img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  text-align: left;
+}
+.footer-text h3 {
+  color: #fff;
+  margin-bottom: 30px;
+}
+.footer-text-2 h3 {
+  color: #fff;
+  margin-bottom: 30px;
+}
+.footer-base {
+  margin-top: 70px;
+}
+.footer-base > img {
+  width: 100%;
+}
+.left-footer-info {
+  margin-left: 10%;
+}
+.right-footer-info {
+  margin-right: 10%;
+}
+
+.footer-info {
+  margin-top: -63px;
+}
+.footer-info > img {
+  margin-top: -63px;
+}
+.footer-base p {
+  display: inline;
+  margin-left: 10px;
+  color: #fff;
+}
+.footer-info img,
+p {
+  line-height: 40px;
+}
+.footer-text input {
+  background-color: #000000;
+  margin-top: 10px;
+  border: 1px solid rgb(85, 85, 85);
+  width: 70%;
+  height: 7%;
+  outline: none;
+  padding: 10px;
+}
+.footer-logo img {
+  width: 250px;
+}
+.footer-text-2 {
+  margin-left: 35%;
+}
+.footer-text img {
+  width: 150px;
+  display: block;
+  margin-bottom: 15px;
+}
+.footer-text-2 img {
+  /* width: 150px; */
+  display: block;
+  margin: 22px 0px;
+}
+.footer-icon {
+  text-align: right;
+}
+.footer-icon i {
+  font-size: 10px;
+  color: #fff;
+  background-color: #000000;
+  border: 1px solid gray;
+  padding: 7px 16px;
+  border-radius: 50%;
+  margin: 0 10px;
+  line-height: 24px;
+}
+/* .icon{
+  background-color: #ffffff;
+} */
+
+.mintButtom {
+  border: 2px solid white;
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px 8px;
+  margin-top: 18px;
+}
+.mintButtom:hover {
+  border: 2px solid rgb(9, 73, 168);
+}
+/* button:hover {
+  border: 2px solid rgb(9, 73, 168);
+  transition: 0.8s;
+} */
+
+.loadmap-body-1 {
+  position: absolute;
+  width: 60%;
+  left: -20%;
+  top: 2%;
+}
+.loadmap-body-2 {
+  position: absolute;
+  width: 60%;
+  left: -20%;
+  top: 25%;
+}
+.loadmap-body-3 {
+  position: absolute;
+  width: 60%;
+  left: -20%;
+  top: 49%;
+}
+.loadmap-body-4 {
+  position: absolute;
+  width: 60%;
+  left: -20%;
+  top: 73%;
+}
+.loadmap-body1-1 {
+  position: absolute;
+  right: -63%;
+  top: 13%;
+  width: 110%;
+}
+.loadmap-body1-2 {
+  position: absolute;
+  right: -63%;
+  top: 37%;
+  width: 110%;
+}
+.loadmap-body1-3 {
+  position: absolute;
+  right: -63%;
+  top: 62%;
+  width: 110%;
+}
+.loadmap-body1-4 {
+  position: absolute;
+  right: -63%;
+  top: 85%;
+  width: 110%;
+}
+.loadmap-body-title {
+  color: white;
+  font-size: 25px;
+  text-align: right;
+  font-weight: 700;
+}
+.loadmap-body-text {
+  color: white;
+  font-size: 18px;
+  text-align: right;
+  font-weight: 600;
+}
+.loadmap-body1-title {
+  color: white;
+  font-size: 25px;
+  text-align: left;
+  font-weight: 700;
+}
+.loadmap-body1-text {
+  color: white;
+  font-size: 18px;
+  text-align: left;
+  font-weight: 600;
+}
+.nftProjects1-display {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.nftProjects2-display {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  margin-top: 2%;
+}
+.play-video {
+  margin-left: -100px;
+}
+
+@media (max-width: 1080px) {
+  .nftProjects-text {
+    color: black;
+    margin-top: 40px;
+    margin-bottom: 2px;
+    font-size: 20px;
+    margin-left: 16px;
+    margin-right: 101px;
+}
+.smartCoin-button button {
+  /* width: 50%; */
+  display: inline;
+  padding: 15px;
+  margin: 3px;
+  border-radius: 10px;
+  /* margin-top: -50%; */
+  background-image: linear-gradient(#80e6f0, #7545eb);
+}
+
+ 
+  .loadmap-body-title {
+    color: white;
+    font-size: 16px;
+    text-align: right;
+    font-weight: 700;
+  }
+  .loadmap-body-text {
+      color: white;
+      font-size: 11px;
+      text-align: right;
+      font-weight: 600;
+  }
+  .loadmap-body1-title {
+    color: white;
+    font-size: 16px;
+    text-align:left;
+    font-weight: 700;
+  }
+  .loadmap-body1-text {
+      color: white;
+      font-size: 11px;
+      text-align: left;
+      font-weight: 600;
+  }
+}
+
+@media (max-width: 992px) {
+  .header-icon {
+    padding: 0;
+  }
+  .smartCoin-title img {
+    width: 50%;
+    margin-top: 30px;
+  }
+  .smartCoin-text {
+    font-size: 18px;
+    color: #47d4ad;
+    margin-bottom: 40px;
+  }
+  .smartCoin-logo img {
+    width: 35%;
+  }
+  .nftProjects-title img {
+    width: 50%;
+  }
+  .nftProjects-footer > .address {
+    margin-top: 100px;
+    font-size: 16px;
+  }
+  .nftProjects-footer > .addressText {
+    font-size: 16px;
+  }
+
+  .loadmap-center img {
+    width: 100%;
+  }
+
+  .loadmap-body-1 {
+    position: absolute;
+    width: 70%;
+    left: -90px;
+    top: 30px;
+  }
+  .loadmap-body-2 {
+    position: absolute;
+    width: 70%;
+    left: -90px;
+    top: 263px;
+  }
+  .loadmap-body-3 {
+    position: absolute;
+    width: 70%;
+    left: -90px;
+    top: 500px;
+  }
+  .loadmap-body-4 {
+    position: absolute;
+    width: 70%;
+    left: -90px;
+    top: 740px;
+  }
+  .loadmap-body1-1 {
+    position: absolute;
+    right: -65px;
+    top: 145px;
+    width: 70%;
+  }
+  .loadmap-body1-2 {
+    position: absolute;
+    right: -65px;
+    top: 385px;
+    width: 70%;
+  }
+  .loadmap-body1-3 {
+    position: absolute;
+    right: -65px;
+    top: 622px;
+    width: 70%;
+  }
+  .loadmap-body1-4 {
+    position: absolute;
+    right: -65px;
+    top: 860px;
+    width: 70%;
+  }
+
+  .loadmap-body-title {
+    color: white;
+    font-size: 10px;
+    text-align: right;
+  }
+  .loadmap-body-text {
+    color: white;
+    font-size: 8px;
+    text-align: right;
+  }
+  .loadmap-body-1 {
+    position: absolute;
+    width: 70%;
+    left: -24%;
+    top: -1%;
+  }
+  .loadmap-body1-text {
+    color: white;
+    font-size: 5px;
+    text-align: left;
+  }
+  .play-video {
+    margin-left: -100px;
+  }
+
+  .loadmap-body-2 {
+    position: absolute;
+    width: 70%;
+    left: -24%;
+    top: 24%;
+  }
+  .loadmap-body-3 {
+    position: absolute;
+    width: 70%;
+    left: -24%;
+    top: 49%;
+  }
+  .loadmap-body-4 {
+    position: absolute;
+    width: 70%;
+    left: -24%;
+    top: 73%;
+  }
+  .loadmap-body1-1 {
+    position: absolute;
+    right: -20%;
+    top: 13%;
+    width: 70%;
+  }
+  .loadmap-body1-2 {
+    position: absolute;
+    right: -20%;
+    top: 36%;
+    width: 70%;
+  }
+  .loadmap-body1-3 {
+    position: absolute;
+    right: -20%;
+    top: 60%;
+    width: 70%;
+  }
+  .loadmap-body1-4 {
+    position: absolute;
+    right: -20%;
+    top: 84%;
+    width: 70%;
+  }
+  .loadmap-body1-title {
+    color: white;
+    font-size: 5px;
+    text-align: left;
+  }
+  .mintStage-margin {
+    margin-left: 1px;
+  }
+  #about {
+    padding: 0;
+  }
+  .ourgame-title {
+    margin-bottom: 20px;
+  }
+  .ourgame-title img {
+    width: 30%;
+  }
+  .nftProjects-footer {
+    text-align: center;
+    margin-top: 33%;
+  }
+  .intro h1 {
+    color: #fff;
+    font-size: 85px;
+    text-shadow: 3px 3px 16px #000000;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-transform: uppercase;
+    margin-top: 113px;
+    margin-bottom: 10px;
+    margin-left: -50px;
+    /* width: 57%; */
+    font-weight: 900;
+    line-height: 74px;
+    display: inline-block;
+    transform: rotate(354deg) !important;
+}
+.intro h3 {
+  font-family: "Segoe UI", sans-serif;
+  color: #00fdd7;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #093783;
+  font-size: 46px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 10px;
+  width: 87%;
+  font-weight: 900;
+  margin-left: -20px;
+  display: inline-block;
+  transform: rotate(354deg) !important;
+  letter-spacing: -3px;
+}
+.loadmap-body-title {
+  color: white;
+  font-size: 16px;
+  text-align: right;
+  font-weight: 700;
+}
+.loadmap-body-text {
+    color: white;
+    font-size: 11px;
+    text-align: right;
+    font-weight: 600;
+}
+}
+
+@media (max-width: 542px) {
+  .header-icon a {
+    right: 1%;
+    padding: 0;
+    border: none;
+    top: 20%;
+  }
+  .header-button {
+    width: 50%;
+  }
+  .header-icon a img {
+    width: 50%;
+  }
+  .header-icon a:nth-child(2) {
+    right: 1%;
+    top: 27%;
+  }
+  .header-icon a:nth-child(3) {
+    right: 1%;
+    top: 34%;
+  }
+  .header-icon a:nth-child(4) {
+    right: 1%;
+    top: 41%;
+  }
+  .header-icon a:nth-child(5) {
+    right: 1%;
+    top: 48%;
+  }
+  .header-icon a:nth-child(6) {
+    right: 1%;
+    top: 55%;
+  }
+  .intro-text button {
+    bottom: 18% !important;
+    left: -15px !important;
+    padding: 10px !important;
+    width: 80% !important;
+    margin: -30px !important;
+  }
+  #header {
+    width: 100%;
+  }
+  .header-title img {
+    top: 25%;
+    width: 75%;
+    left: 0%;
+  }
+  .intro h1 {
+    font-size: 33px;
+    margin-top: -12px;
+    margin-bottom: 10px;
+    margin-left: -80px;
+    line-height: 1;
+    transform: rotate(354deg) !important;
+  }
+  .intro h3 {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #093783;
+    font-size: 18px;
+    margin-bottom: 0px;
+    width: 121%;
+    font-weight: 900;
+    margin-left: -69px;
+    display: inline-block;
+    transform: rotate(354deg) !important;
+    letter-spacing: -2px;
+  }
+  header .intro-text {
+    padding: 0 !important;
+  }
+  .loadmap-center {
+    position: relative;
+    width: 35%;
+    margin: auto;
+  }
+  .intro-text {
+    padding: 100px 0 !important;
+  }
+  .header-title img:nth-child(2) {
+    position: absolute;
+    top: 46%;
+    margin-left: 15px;
+    margin-top: -24px;
+  }
+  .mintingstage-title img {
+    width: 85%;
+  }
+  #mintStage {
+    padding: 0;
+    padding-bottom: 40px;
+  }
+  .mintingstage-title {
+    padding: 40px 0;
+  }
+  .mintingstagebtn img {
+    width: 80%;
+  }
+  .mintingstagebtn button {
+    width: 80%;
+  }
+  .play-video {
+    margin-left: -6%;
+    margin-top: -98px;
+    width: 372px;
+    height: 320px;
+  }
+  .game-title {
+    display: block;
+    width: 60% !important;
+  }
+  .engin-logo img {
+    width: 50%;
+  }
+
+  .engin-logo {
+    position: absolute;
+    top: 3%;
+    right: 0;
+  }
+  .ourGame-header {
+    position: relative;
+    text-align: center;
+  }
+  .ourGame-footer img {
+    width: 95%;
+  }
+  .ourGame-bg {
+    background-size: 180% 150%;
+  }
+  .play-title img {
+    width: 60%;
+  }
+  .ourgame-text {
+    font-size: 14px;
+    width: 80%;
+    margin: auto;
+    color: white;
+    font-weight: 500;
+  }
+  .ourGame-footer {
+    padding: 110px 0;
+    text-align: center;
+    margin-top: -39%;
+    margin-left: 10%;
+  }
+  .ourgame-icon img {
+    width: 30%;
+    height: 100%;
+  }
+  .ourgame-icon {
+    align-items: center;
+  }
+  .nftProjects-title {
+    text-align: center;
+    padding: 22px;
+  }
+  .nftProjects-title img {
+    width: 70%;
+  }
+  .nftProjects1-display img {
+    width: 60%;
+  }
+  .nftProjects-text-item {
+    width: 38%;
+    margin-bottom: 20px;
+  }
+  .nftProjects-footer {
+    text-align: center;
+    margin-top: 33%;
+  }
+  .ourgame-title {
+    margin-bottom: -5px;
+  }
+  .ourgame-title img {
+    width: 30%;
+  }
+  .loadmap-center {
+    text-align: center;
+    width: 100%;
+    height: auto;
+  }
+  .loadmap-center img {
+    width: 100%;
+    height: auto;
+  }
+  .mintingStage-bg {
+    background-position: center;
+    background-size: 250% 100%;
+  }
+  .play-item {
+    position: absolute;
+    left: 33%;
+    top: 32%;
+    width: 80px;
+  }
+  .loadmap-center {
+    width: 70%;
+    height: auto;
+  }
+  .nftProjects-text-item {
+    width: 54%;
+    margin-bottom: 20px;
+  }
+  .nftProjects-text {
+    font-size: 16px;
+    margin-top: 25px;
+  }
+  .nftProjects2-display img {
+    width: 60%;
+    height: 115%;
+  }
+  .nftProjects-text {
+    font-size: 15px;
+    margin-top: 26px;
+    margin-left: 21px;
+  }
+  .nftProjects-text h3 {
+    display: none !important;
+  }
+  .smartCoin-text {
+    font-size: 10px;
+  }
+  .smartCoin-title img {
+    margin: 0px;
+  }
+
+  .smartCoin-logo img {
+    width: 100%;
+  }
+  .smartCoin-button {
+    display: block;
+    margin: -20px 0;
+  }
+  .smartCoin-button button img {
+    width: 70%;
+  }
+  .smartCoin-middle-button {
+    margin: 50px 0 !important;
+    top: 16% !important;
+  }
+  .UpComingEvent-title {
+    margin: 0;
+  }
+  .upComingEvent-logo {
+    margin: 0;
+  }
+  .upComingEvent-sub-logo {
+    margin: 0;
+  }
+  .upComingEvent-sub-logo img {
+    width: 80%;
+  }
+  .upComingEvent-text {
+    width: 75%;
+    padding: 5px;
+    border-radius: 10px;
+    /* height: 200px; */
+  }
+  .upComingEvent-text p {
+    font-size: 10px;
+  }
+  .upComingEvent-button button {
+    width: 50%;
+  }
+  .upComingEvent-button button img {
+    width: 50%;
+  }
+  .footer-text {
+    width: 80%;
+    margin: 20px auto;
+  }
+  .footer-logo img {
+    width: 50%;
+  }
+  #footer {
+    text-align: center;
+  }
+  .footer-text img {
+    width: 150px;
+    display: inline;
+  }
+  .footer-icon {
+    text-align: center;
+  }
+  .footer-background img {
+    width: 45%;
+  }
+  .footer-text-2 {
+    margin-left: 10%;
+  }
+  .loadmap-title {
+    text-align: center;
+    padding-top: 0px;
+  }
+  .loadmap-title img {
+    width: 60%;
+    margin-left: -57px;
+    margin-top: 44px;
+  }
+  .loadmap-right-top {
+    position: absolute;
+    top: -14%;
+    right: 0;
+    width: 30%;
+  }
+  .loadmap-body-title {
+    color: white;
+    font-size: 11px;
+    text-align: right;
+  }
+  .loadmap-body-text {
+    color: white;
+    font-size: 9px;
+    text-align: right;
+  }
+  .loadmap-body1-title {
+    color: white;
+    font-size: 11px;
+    text-align: left;
+  }
+  .loadmap-body1-text {
+    color: white;
+    font-size: 9px;
+    text-align: left;
+  }
+  .loadmap-body-1 {
+    position: absolute;
+    width: 70%;
+    left: -26%;
+    top: 2%;
+  }
+  .loadmap-body1-1 {
+    position: absolute;
+    right: -20%;
+    top: 14%;
+    width: 70%;
+  }
+  #loadmap {
+    background: url(../imgs/LoadMapBackground.png) center center / 100% 150%
+      no-repeat;
+    z-index: -1;
+    margin-top: -1px;
+    position: relative;
+    /* padding: 100px 0; */
+  }
+  .play-item {
+    position: absolute;
+    left: 33%;
+    top: 32%;
+    width: 80px;
+  }
+  .play-bg {
+    position: relative !important;
+    width: 80% !important;
+    height: 160px !important;
+    left: 10px !important;
+    background-color: #111325;
+  }
+  .nftProjects-background img {
+    height: 100%;
+  }
+  .smartCoin-title img {
+    margin: 0px;
+  }
+  .smartCoin-text {
+    font-size: 10px;
+    margin-bottom: -35px;
+    color: white;
+  }
+  .smartCoin-logo img {
+    width: 100%;
+  }
+  .m-btn {
+    display: flex;
+  }
+  .smartCoin-button {
+    display: block;
+    margin: -4px 0px;
+    margin-top: -72px;
+  }
+  .smartCoin-button button {
+    /* width: 50%; */
+    display: inline;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    /* margin-top: -50%; */
+    background-image: linear-gradient(#80e6f0, #7545eb);
+  }
+  .smartCoin-middle-button {
+    margin: 30px 0 !important;
+    /* margin-top: 50px !important; */
+    top: 16% !important;
+  }
+  .smartCoin-button button img {
+    width: 100%;
+  }
+
+  .nftProjects-footer .address {
+    margin-top: -100px;
+    width: 100%;
+  }
+  .UpComingEvent-background img {
+    width: 100%;
+    height: 114%;
+    position: absolute;
+    top: -17px;
+    z-index: -1;
+    text-align: left;
+  }
+  .UpComingEvent-title {
+    margin: 0;
+  }
+  .upComingEvent-logo {
+    margin: 0;
+  }
+  .upComingEvent-sub-logo img {
+    width: 80%;
+  }
+  .upComingEvent-text {
+    width: 75%;
+    padding: 5px;
+    border-radius: 10px;
+    /* height: 200px; */
+  }
+  .upComingEvent-text p {
+    font-size: 10px;
+    line-height: 1.5;
+    word-spacing: 1px;
+    font-weight: 100;
+  }
+  .upComingEvent-button button {
+    width: 50%;
+  }
+  .upComingEvent-button button img {
+    width: 50%;
+  }
+  #footer {
+    text-align: center;
+  }
+  .footer-text {
+    width: 80%;
+    margin: 20px auto;
+  }
+  .footer-text h3 {
+    font-size: 15px !important;
+    margin-bottom: 10px;
+  }
+  .footer-text p {
+    font-size: 10px !important;
+    margin-bottom: 10px;
+    line-height: 20px;
+  }
+  .footer-logo img {
+    width: 50%;
+  }
+  .footer-text-2 {
+    margin-left: -1%;
+  }
+  .footer-text-2 h3 {
+    font-size: 15px !important;
+    margin-bottom: 10px;
+  }
+  .footer-text-2 img {
+    width: 40%;
+    margin: 0;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  .footer-icon {
+    text-align: center;
+    margin-left: 16%;
+  }
+  .footer-icon i {
+    text-align: center;
+    padding: 5px;
+    line-height: 15px;
+  }
+  .mintStage-img img{
+    width: 100%;
+  }
+  .left-footer-info {
+    margin-left: 1%;
+    margin-top: -17px;
+}
+.footer-base > img {
+  width: 100%;
+  height: 10%;
+}
+}
+
+.play-bg {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  background-color: #111325;
+}
